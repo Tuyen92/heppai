@@ -1,0 +1,37 @@
+{
+    "folders": [
+        {
+            "path": "db",
+			"path": "docker",
+			"path": "src",
+			"path": "scripts",
+			"path": "."
+        },
+    ],
+    "launch": {
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "name": "Translate",
+                "type": "debugpy",
+                "request": "launch",
+                "program": "${workspaceRoot}/main.py",
+                "console": "integratedTerminal",
+                "args": [
+                ],
+            },
+            {
+                "name": "run file",
+                "type": "debugpy",
+                "request": "launch",
+                "program": "${file}",
+                "console": "integratedTerminal",
+                "justMyCode": false,
+                "args": [
+                ],
+            }
+
+            
+        ]
+    }
+}
